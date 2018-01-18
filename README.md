@@ -1,38 +1,35 @@
 # CourseSelect [![Build Status](https://travis-ci.org/PENGZhaoqing/CourseSelect.svg?branch=master)](https://travis-ci.org/PENGZhaoqing/CourseSelect)
-
-### [中文教程1](http://blog.csdn.net/ppp8300885/article/details/52594839) [中文教程2](http://blog.csdn.net/ppp8300885/article/details/52601560) [中文教程3](http://blog.csdn.net/ppp8300885/article/details/52669749)
-
-
-这个样本系统是基于国科大研究生课程 (高级软件工程) 开发的项目,目的是帮助入门者学习RoR (Ruby on Rails) 
-
-适合新学者的入手的第一个项目 ([演示Demo戳这里](https://courseselect.herokuapp.com/ ))，入门者可以在这个样本系统上增加更多的功能:
-
-* 处理选课冲突、控制选课人数
-* 统计选课学分，学位课等
-* 增加选课的开放、关闭功能
-* 自定义管理员后台
-* 基于OAuth的授权登陆
-* Excel格式的数据导入
-* 绑定用户邮箱（实现注册激活，忘记密码等）
-* 站内查找检索 （课程按分类查找，过滤等）
-
-### 目前功能：
-
+### 1.项目介绍：
+([项目演示链接网址](https://courseselect.herokuapp.com/ ))
+本项目是高级软件工程课程大作业，是在已有的一个在线选课系统上进行的二次开发，完善改进该系统的功能。包含对已有项目的分析，二次开发，测试，部署等部分
+### 2.开发环境和关键技术：
+* 使用rails作为开发框架
+* 使用PostgreSQL作为数据库，用于存放users，courses，grades三张数据表
+* 使用heroku进行线上部署
+* 使用github来存放代码，对代码进行管理
+* 使用atom对项目进行编辑，使编程更加方便便捷
+### 3.原有功能：
 * 多角色登陆（学生，老师，管理员）
 * 学生动态选课，退课
 * 老师动态增加，删除课程
 * 老师对课程下的学生添加、修改成绩
 * 权限控制：老师和学生只能看到自己相关课程信息
-
-### 截图
-
-<img src="/lib/screenshot1.png" width="700">  
-
+### 4.新增功能：
+* 绑定邮箱：在注册后，用户登录时要激活邮箱验证
+* 解决选课冲突：主要是通过上课时间冲突来提示学生选课冲突
+* 学分统计：实现查看已获得成绩的课程的学分统计情况，查看目前选课的学分统计情况，查看用户对应学位的学分要求
+* 课程评估：学生在选修课程并获得学分后，可以根据自身情况对该课程从五个方面进行评价，为后面选课的学生提供参考
+* 导出excel课表：学生选课后，可以导出个人课表
+### 5.项目截图：
+<img src="/lib/screenshot1.png" width="700">  
 <img src="/lib/screenshot2.png" width="700">
-
-<img src="/lib/screenshot3.png" width="700">   
-
+<img src="/lib/screenshot3.png" width="700">   
 <img src="/lib/screenshot4.png" width="700">
+### 6.测试：
+### 本地测试：
+### Travis CI 线上自动测试：
+### 7.线上部署：
+### 8.进行项目时遇到的问题及解决方法：
 
 ## 说明
 
